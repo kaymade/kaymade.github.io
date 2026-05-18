@@ -462,6 +462,7 @@ progress::-webkit-progress-value {
         width: 82vw;
         padding: 28px;
         margin: 40px auto;
+        text-align: center;
     }
 
     .system-widget,
