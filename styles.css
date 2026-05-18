@@ -399,3 +399,83 @@ progress::-webkit-progress-value {
         width: 80vw;
     }
 }
+
+@media (max-width: 900px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        position: relative;
+        margin: 20px auto 10px auto;
+        padding: 10px;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .initials {
+        margin-bottom: 5px;
+    }
+
+    .welcome {
+        margin-top: 0;
+    }
+
+    .bow1 {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: block;
+        margin: 0 auto 20px auto;
+        width: 60px;
+        height: 60px;
+    }
+
+    .buttons {
+        position: sticky;
+        top: 10px;
+        left: auto;
+        transform: none;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+
+        width: 100%;
+        margin: 10px auto 30px auto;
+        z-index: 20;
+    }
+
+    .portfolio,
+    .programs,
+    .connect,
+    .projects {
+        margin: 4px;
+        padding: 8px;
+        font-size: 0.65rem;
+    }
+
+    .about-me,
+    .installed-programs,
+    .connect-with-me {
+        width: 82vw;
+        padding: 28px;
+        margin: 40px auto;
+    }
+
+    .system-widget,
+    .status-box {
+        position: relative;
+        right: auto;
+        top: auto;
+
+        width: 82vw;
+        margin: 30px auto;
+        box-sizing: border-box;
+    }
+
+    .status-box {
+        height: fit-content;
+    }
+}
