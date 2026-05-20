@@ -1,14 +1,14 @@
-/* Personal Landing Page */
+# Personal Landing Page
 
 A dreamy-editorial style personal landing page created as part of my journey learning frontend development.
 
-/** About the Project **/
+## About the Project
 
 This project is my first official personal landing page. I built it to practice HTML and CSS while creating a space that reflects my personal style, creative direction, and growth as a self-taugh developer. 
 
 The design is inspired by vintage web aesthetics, soft luxury visuals, romantic editorial layouts, and early 2000's internet nostalgia. 
 
-/** Features **/
+## Features
 
 - Custom landing page layout
 - Styled navigation buttons
@@ -18,13 +18,13 @@ The design is inspired by vintage web aesthetics, soft luxury visuals, romantic 
 - Custom hover, active, visited, and focus states
 - Personal branding and visual theme
 
-/** Built With **/
+## Built With
 
 - HTML
 - CSS
 - GitHub Pages
 
-/** What I Practiced **/
+## What I Practiced
 
 While building this project, I practiced:
 
@@ -37,11 +37,11 @@ While building this project, I practiced:
 - Organixing project files and image folders
 - Publishing a project with GitHub pages
 
-/** What I Learned **/
+## What I Learned
 
 This project helped me better understand how small styling choices can completely change the feel of a webpage. I also learned more about organizing files, troubleshooting image paths, adjusting layouts for mobile, and creating a design that feels personal instead of generic. 
 
-/** Future Improvements **/
+## Future Improvements
 
 Some things I may add or improve later:
 
@@ -52,11 +52,11 @@ Some things I may add or improve later:
 - More accessiblity improvements
 - Updated content as I build more projects
 
-/** Live Site **/
+## Live Site
 
 [View the live site here](https://kaymade.github.io)
 
-/** Screenshot **/
+## Screenshot
 
 ![Screenshot of landing page](images/screenshot.png)
 
