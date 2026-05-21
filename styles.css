@@ -269,6 +269,13 @@ a {
     border-bottom: 1px solid #fcebc3;
 }
 
+.view-project1 {
+    text-decoration: none;
+    color: #fcebc3;
+    border: 2px solid #fcebc3;
+    width: fit-content;
+}
+
 /* States */
 
 .projects:hover,
