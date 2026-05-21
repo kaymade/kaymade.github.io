@@ -234,27 +234,24 @@ a {
     padding: 3px;
 }
 
-.project-card a {
-    display: inline-block;
-    margin-top: 10px;
-}
-
 .projects-section {
     position: relative;
     width: 40vw;
     min-height: fit-content;
     margin: 80px auto;
-    padding: 40px;
     border-radius: 20px;
-    background:
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    padding: 40px;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.1)
+    );
     z-index: 3;
-    box-sizing: border-box;
     text-align: center;
 }
 
 .project-card {
-   max-width: 400px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -263,6 +260,13 @@ a {
     border-radius: 10px;
     margin-bottom: 15px;
     display: block;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fcebc3;
+    border-bottom: 1px solid #fcebc3;
 }
 
 /* States */
@@ -489,7 +493,8 @@ progress::-webkit-progress-value {
 
     .about-me,
     .installed-programs,
-    .connect-with-me {
+    .connect-with-me,
+    .projects-section {
         width: 82vw;
         padding: 28px;
         margin: 40px auto;
@@ -510,10 +515,4 @@ progress::-webkit-progress-value {
     .status-box {
         height: fit-content;
     }
-    .projects-section {
-    width: 82vw;
-    padding: 28px;
-    margin: 40px auto;
-    text-align: center;
-}
 }
