@@ -80,7 +80,7 @@ a {
     z-index: 10;
 }
 
-.portfolio, .programs, .connect, .projects-button {
+.portfolio, .programs, .connect, .projects {
     color: #fcebc3;
     font-size: 0.80rem;
     border: 1px solid #fcebc3;
@@ -245,6 +245,25 @@ a {
 .project-card a {
     display: inline-block;
     margin-top: 10px;
+}
+
+.projects-section {
+    position: relative;
+    width: 45vw;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 20px;
+    background:
+        linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.1)),
+        #940007;
+    z-index: 3;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
 }
 
 /* States */
@@ -492,4 +511,10 @@ progress::-webkit-progress-value {
     .status-box {
         height: fit-content;
     }
+    .projects-section {
+    width: 82vw;
+    padding: 28px;
+    margin: 40px auto;
+    text-align: center;
+}
 }
