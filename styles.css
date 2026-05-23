@@ -441,24 +441,25 @@ progress::-webkit-progress-value {
     right: -50px;
 }
 
-.bow2 {
-    filter: sepia(80%);
-    opacity: 50%;
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    bottom: 325px;
-    left: -50px;
-}
-
+.bow2,
 .bow3 {
     filter: sepia(80%);
     opacity: 50%;
     position: absolute;
     width: 100px;
     height: 100px;
-    bottom: 325px;
+    top: -45px;
+    z-index: 2;
+}
+
+.bow2 {
+    left: -50px;
+    transform: rotate(-10deg);
+}
+
+.bow3 {
     right: -50px;
+    transform: rotate(10deg);
 }
 
 /* Smaller Screen Settings */
@@ -539,4 +540,19 @@ progress::-webkit-progress-value {
     .status-box {
         height: fit-content;
     }
+
+    .bow2,
+.bow3 {
+    width: 70px;
+    height: 70px;
+    top: -35px;
+}
+
+.bow2 {
+    left: -25px;
+}
+
+.bow3 {
+    right: -25px;
+}
 }
