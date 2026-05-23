@@ -51,6 +51,25 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0.8rem;
+}
+
+li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 6px;
+}
+
+li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #f6d98f;
+    font-size: 0.7rem;
+}
+
 /* Classes */
 
 .header {
@@ -251,8 +270,47 @@ a {
 }
 
 .project-card {
-    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 850px;
     margin: 0 auto;
+}
+
+.project-item {
+    padding: 18px;
+    border: 1px solid rgba(252, 235, 195, 0.5);
+    border-radius: 15px;
+    background: rgba(105, 0, 6, 0.25);
+}
+
+.project-item img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.project-item p {
+    margin-bottom: 15px;
+}
+
+.view-project {
+    display: inline-block;
+    color: #fcebc3;
+    border: 2px solid #fcebc3;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+.view-project:hover,
+.view-project:focus {
+    background-color: #fcebc3;
+    color: #690006;
 }
 
 .project-card img {
@@ -523,4 +581,8 @@ progress::-webkit-progress-value {
     .status-box {
         height: fit-content;
     }
+
+    .project-card {
+    grid-template-columns: 1fr;
+}
 }
