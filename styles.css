@@ -67,7 +67,8 @@ a {
 
 progress {
     appearance: none;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 10px;
     border: none;
     border-radius: 20px;
@@ -251,10 +252,10 @@ progress::-webkit-progress-value {
     right: 70px;
     top: 120px;
     height: fit-content;
-    width: 200px;
+    width: 220px;
     border: 2px solid #fcebc3;
-    padding: 7px;
-    margin: -7px;
+    padding: 12px;
+    margin: 0;
     z-index: 3;
 }
 
