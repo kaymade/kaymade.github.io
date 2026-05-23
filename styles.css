@@ -1,10 +1,32 @@
-/* HTML*/
+/* Base */
+
+* {
+    box-sizing: border-box;
+}
 
 html {
     background-color: #690006;
     font-size: 24px;
     font-family: 'Didot', sans-serif;
     color: #fcebc3;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.background {
+    background-image: url("images/glossy-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    opacity: 0.3;
+    min-height: 100vh;
 }
 
 /* Headings */
@@ -22,21 +44,26 @@ h3 {
     font-size: 0.8rem;
 }
 
-/* Paragraphs & Text */
+/* Text */
 
 p {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 0.80rem;
+    font-size: 0.8rem;
 }
 
 span {
     font-size: 0.8rem;
-    text-align: right;
 }
 
 li {
     font-size: 0.7rem;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* Progress Bars */
 
 progress {
     appearance: none;
@@ -47,44 +74,33 @@ progress {
     overflow: hidden;
 }
 
-a {
-    text-decoration: none;
+progress::-webkit-progress-bar {
+    background-color: rgba(255, 243, 216, 0.2);
+    border-radius: 20px;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0.8rem;
+progress::-webkit-progress-value {
+    background: linear-gradient(to right, #fcebc3, #f6c7d5);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 243, 216, 0.4);
 }
 
-li {
-    position: relative;
-    padding-left: 1rem;
-    margin-bottom: 6px;
-}
-
-li::before {
-    content: "✦";
-    position: absolute;
-    left: 0;
-    color: #f6d98f;
-    font-size: 0.7rem;
-}
-
-/* Classes */
+/* Header & Navigation */
 
 .header {
     margin: 10px;
     position: fixed;
     padding: 10px;
+    z-index: 10;
+}
+
+.initials,
+.welcome {
+    text-align: center;
 }
 
 .welcome {
-    font-family: 'Coromorant Garamond', serif;
-    text-align: center;
-}
-
-.initials {
-    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .buttons {
@@ -92,140 +108,143 @@ li::before {
     top: 50%;
     left: 40px;
     transform: translateY(-50%);
-
     display: flex;
     flex-direction: column;
-
     z-index: 10;
 }
 
-.portfolio, .programs, .connect, .projects {
+.portfolio,
+.programs,
+.projects,
+.connect {
     color: #fcebc3;
-    font-size: 0.80rem;
+    font-size: 0.8rem;
     border: 1px solid #fcebc3;
     padding: 10px;
     border-radius: 5px;
-    text-decoration: none;
     display: block;
     width: fit-content;
     margin: 20px;
 }
 
-.about-me {
-    position: relative;
-    width: 45vw;
-    min-height: fit-content;
-    padding: 40px;
-    background-color: #940007;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-    margin: 50px auto;
-    border-radius: 20px;
-    z-index: 3;
-}
+/* Shared Card Sections */
 
+.about-me,
+.installed-programs,
+.projects-section,
 .connect-with-me {
     position: relative;
-    width: 20vw;
     min-height: fit-content;
-    padding: 40px;
-    background-color: #940007;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-    margin: 80px auto;
-    border-radius: 20px;
-    z-index: 3;
-}
-
-.installed-programs {
-    position: relative;
-    width: 40vw;
-    min-height: fit-content;
-    margin: 80px auto;
-    border-radius: 20px;
-    padding: 40px;
-    background-color: #940007;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-    margin: 80px auto;
-    z-index: 3;
-}
-
-.background {
-    background-image: url("images/glossy-background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    opacity: 0.3;
-    min-height: 100vh;
-}
-
-.card {
-    position: relative;
-    width: 60vw;
-    min-height: 100vh;
     margin: 80px auto;
     border-radius: 20px;
     padding: 40px;
     background:
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1)),
-        #940007;
-    z-index: 1;
+        linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.1)
+        );
+    z-index: 3;
 }
 
-.email, .linkedin, .github {
-    color: #fcebc3;
-    font-size: 0.80rem;
-    border-bottom: 1px solid #fcebc3;
+.about-me {
+    width: 45vw;
+    margin-top: 50px;
 }
 
-.connect-with, .instll-prgrms {
+.installed-programs {
+    width: 40vw;
+}
+
+.projects-section {
+    width: 40vw;
     text-align: center;
 }
 
+.connect-with-me {
+    width: 20vw;
+}
+
+.connect-with,
+.instll-prgrms,
 .want-to {
     text-align: center;
 }
 
 .contact-me {
-    margin: 10px 10px 10px 10px;
-    padding: 30px 0px 20px 0px;
+    margin: 10px;
+    padding: 30px 0 20px;
     border-bottom: 2px solid #fcebc3;
     text-align: center;
 }
 
+/* Star Lists */
+
+.star-list {
+    list-style: none;
+    padding-left: 0.8rem;
+}
+
+.star-list li {
+    position: relative;
+    padding-left: 1rem;
+    margin-bottom: 6px;
+}
+
+.star-list li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: #f6d98f;
+    font-size: 0.7rem;
+}
+
+/* Contact List */
+
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.contact-list li {
+    margin-bottom: 12px;
+}
+
+.email,
+.linkedin,
+.github {
+    color: #fcebc3;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #fcebc3;
+}
+
+/* Status Box */
+
 .status-box {
     position: fixed;
     right: 60px;
-    top: 220px;
-
+    top: 500px;
     width: 15vw;
-    height: 25vh;
+    height: fit-content;
     padding: 20px;
-
     border-radius: 20px;
-
     background:
         linear-gradient(
             to bottom,
-            rgba(255,255,255,0.2),
-            rgba(255,255,255,0.08)
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.08)
         );
-
     backdrop-filter: blur(6px);
-
     font-size: 0.7rem;
+    z-index: 3;
 }
 
 .currently-learning {
     border-bottom: 1px solid #fcebc3;
 }
 
-.status-box {
-    top: 500px;
-    height: fit-content;
-    width: 15vw;
-}
+/* System Widget */
 
 .system-widget {
     position: fixed;
@@ -236,6 +255,7 @@ li::before {
     border: 2px solid #fcebc3;
     padding: 7px;
     margin: -7px;
+    z-index: 3;
 }
 
 .widget-header {
@@ -253,21 +273,7 @@ li::before {
     padding: 3px;
 }
 
-.projects-section {
-    position: relative;
-    width: 40vw;
-    min-height: fit-content;
-    margin: 80px auto;
-    border-radius: 20px;
-    padding: 40px;
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.2),
-        rgba(255, 255, 255, 0.1)
-    );
-    z-index: 3;
-    text-align: center;
-}
+/* Projects */
 
 .project-card {
     display: grid;
@@ -282,6 +288,12 @@ li::before {
     border: 1px solid rgba(252, 235, 195, 0.5);
     border-radius: 15px;
     background: rgba(105, 0, 6, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 18px rgba(252, 235, 195, 0.25);
 }
 
 .project-item img {
@@ -297,7 +309,8 @@ li::before {
     margin-bottom: 15px;
 }
 
-.view-project {
+.view-project,
+.more-projects {
     display: inline-block;
     color: #fcebc3;
     border: 2px solid #fcebc3;
@@ -307,40 +320,18 @@ li::before {
     text-decoration: none;
 }
 
-.view-project:hover,
-.view-project:focus {
-    background-color: #fcebc3;
-    color: #690006;
+.more-projects {
+    margin-top: 30px;
 }
 
-.project-card img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    display: block;
-}
-
-.project-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #fcebc3;
-    border-bottom: 1px solid #fcebc3;
-}
-
-.view-project1 {
-    text-decoration: none;
-    color: #fcebc3;
-    border: 2px solid #fcebc3;
-    width: fit-content;
-    font-size: 0.8rem;
-}
-
-/* States */
+/* Link States */
 
 .projects:hover,
 .connect:hover,
 .programs:hover,
-.portfolio:hover {
+.portfolio:hover,
+.view-project:hover,
+.more-projects:hover {
     background-color: #fcebc3;
     color: #690006;
 }
@@ -348,7 +339,9 @@ li::before {
 .projects:focus,
 .connect:focus,
 .programs:focus,
-.portfolio:focus {
+.portfolio:focus,
+.view-project:focus,
+.more-projects:focus {
     background-color: #fcebc3;
     color: #690006;
     outline: 2px solid #f6d98f;
@@ -359,7 +352,9 @@ li::before {
 .projects:active,
 .connect:active,
 .programs:active,
-.portfolio:active {
+.portfolio:active,
+.view-project:active,
+.more-projects:active {
     background-color: #e6c77a;
     color: #690006;
     transform: scale(0.98);
@@ -400,7 +395,7 @@ li::before {
     width: 100px;
     z-index: 2;
     overflow: hidden;
-    transform: rotate(15deg)
+    transform: rotate(15deg);
 }
 
 .heart-drip2 {
@@ -412,7 +407,7 @@ li::before {
     width: 100px;
     z-index: 2;
     overflow: hidden;
-    transform:rotate(-15deg);
+    transform: rotate(-15deg);
 }
 
 .bow1 {
@@ -423,6 +418,7 @@ li::before {
     height: 50px;
     top: 150px;
     left: 80px;
+    z-index: 2;
 }
 
 .stars {
@@ -446,7 +442,7 @@ li::before {
 }
 
 .bow2 {
-     filter: sepia(80%);
+    filter: sepia(80%);
     opacity: 50%;
     position: absolute;
     width: 100px;
@@ -465,50 +461,12 @@ li::before {
     right: -50px;
 }
 
-/* Background Track */
-
-progress::-webkit-progress-bar {
-    background-color: rgba(255, 243, 216, 0.2);
-    border-radius: 20px;
-    width: 175px;
-}
-
-/* Filled Progress */
-
-progress::-webkit-progress-value {
-    background: linear-gradient(to right, #fcebc3, #f6c7d5);
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(255, 243, 216, 0.4);
-}
-
 /* Smaller Screen Settings */
 
 @media (max-width: 900px) {
-    .layout {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .buttons {
-        width: auto;
-        align-items: flex-start;
-    }
-
-    .about-me,
-    .installed-programs,
-    .connect-with-me {
-        width: 80vw;
-    }
-}
-
-@media (max-width: 900px) {
-    body {
-        overflow-x: hidden;
-    }
-
     .header {
         position: relative;
-        margin: 20px auto 10px auto;
+        margin: 20px auto 10px;
         padding: 10px;
         text-align: center;
         width: fit-content;
@@ -527,7 +485,7 @@ progress::-webkit-progress-value {
         top: auto;
         left: auto;
         display: block;
-        margin: 0 auto 20px auto;
+        margin: 0 auto 20px;
         width: 60px;
         height: 60px;
     }
@@ -537,21 +495,19 @@ progress::-webkit-progress-value {
         top: 10px;
         left: auto;
         transform: none;
-
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         gap: 8px;
-
         width: 100%;
-        margin: 10px auto 30px auto;
+        margin: 10px auto 30px;
         z-index: 20;
     }
 
     .portfolio,
     .programs,
-    .connect,
-    .projects {
+    .projects,
+    .connect {
         margin: 4px;
         padding: 8px;
         font-size: 0.65rem;
@@ -559,12 +515,16 @@ progress::-webkit-progress-value {
 
     .about-me,
     .installed-programs,
-    .connect-with-me,
-    .projects-section {
+    .projects-section,
+    .connect-with-me {
         width: 82vw;
         padding: 28px;
         margin: 40px auto;
         text-align: center;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
     }
 
     .system-widget,
@@ -572,17 +532,11 @@ progress::-webkit-progress-value {
         position: relative;
         right: auto;
         top: auto;
-
         width: 82vw;
         margin: 30px auto;
-        box-sizing: border-box;
     }
 
     .status-box {
         height: fit-content;
     }
-
-    .project-card {
-    grid-template-columns: 1fr;
-}
 }
