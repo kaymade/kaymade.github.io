@@ -448,7 +448,7 @@ progress::-webkit-progress-value {
     position: absolute;
     width: 100px;
     height: 100px;
-    top: -45px;
+    top: -20px;
     z-index: 2;
 }
 
