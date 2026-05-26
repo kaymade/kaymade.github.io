@@ -420,6 +420,7 @@ progress::-webkit-progress-value {
     top: 150px;
     left: 75px;
     z-index: 2;
+    margin-top: 5px;
 }
 
 .stars {
