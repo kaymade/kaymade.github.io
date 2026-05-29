@@ -50,8 +50,3 @@ A fantasy-inspired editorial magazine homepage focused on CSS Grid, visual hiera
 ## Reflection
 
 This version of my portfolio shows my growth from building simple static pages to creating a more polished and intentional personal website. It helped me practice not only HTML and CSS, but also project presentation, visual organization, and design consistency.
-
-## Screenshot
-
-![Screenshot of landing page](images/screenshot.png)
-
