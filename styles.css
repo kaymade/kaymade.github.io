@@ -597,7 +597,6 @@ p {
 }
 
 .hero-image-frame {
-  min-height: clamp(27rem, 48vw, 38rem);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-strong);
 }
