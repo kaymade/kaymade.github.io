@@ -301,21 +301,18 @@ p {
 
 /* header */
 .hero-image-frame {
-  width: min(100%, 360px);
-  min-height: 260px;
-  padding: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
   margin-inline: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: visible;
 }
 
-.hero-initial-image {
+.hero-initial {
   width: 100%;
-  max-width: 300px;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: contain;
 }
 
 .site-header {
