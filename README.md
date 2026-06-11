@@ -1,6 +1,6 @@
-# Portfolio Landing Page V2
+# Portfolio Landing Page v1.0.2
 
-This is the second version of my personal portfolio landing page. The goal of this project was to create a cleaner, more polished portfolio homepage that better represents my current HTML and CSS skills, my featured projects, and my progress as a web developer.
+This is the third version of my personal portfolio landing page. The goal of this project was to create a cleaner, more polished portfolio homepage that better represents my current HTML and CSS skills, my featured projects, and my progress as a web developer.
 
 ## Project Goal
 
