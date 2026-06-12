@@ -48,7 +48,7 @@
   --font-body: "Inter", Arial, sans-serif;
   --font-accent: "IBM Plex Mono", monospace;
 
-  --container: 1180px;
+  --container: 1320px;
 
   --space-1: 0.5rem;
   --space-2: 0.75rem;
@@ -227,7 +227,7 @@ h3 {
   color: var(--gin-tonic);
   font-family: var(--font-heading);
   font-weight: 600;
-  line-height: 0.96;
+  line-height: 1.05;
   text-wrap: balance;
 }
 
@@ -461,6 +461,32 @@ p {
   transform: translateY(-2px);
 }
 
+.site-header .container {
+  width: 100%;
+  max-width: none;
+  padding-inline: var(--space-4);
+}
+
+.header-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  flex: 0 0 auto;
+}
+
+.site-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-cta {
+  flex: 0 0 auto;
+}
 /* buttons */
 
 .button {
@@ -1483,3 +1509,4 @@ meter::-moz-meter-bar {
     animation-iteration-count: 1 !important;
   }
 }
+
