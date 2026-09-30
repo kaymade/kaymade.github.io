@@ -1,328 +1,244 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="K.S.H Creative Archive is a unique portfolio featuring polished web projects, thoughtful design direction, and carefully built digital experiences."
-    >
-
-    <title>K.S.H. Creative Archive</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+      content="Kay's front-end development portfolio, featuring thoughtful web projects, creative coding, and accessible digital experiences."
+    />
+    <title>Kay | Front-End Developer + Creative Coder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Inter:wght@400;500;600&amp;display=swap"
       rel="stylesheet"
-    >
-
-    <link rel="stylesheet" href="styles.css">
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <div class="page-glow" aria-hidden="true"></div>
-
     <header class="site-header">
       <div class="container header-inner">
-        <a href="index.html" class="brand" aria-label="K. S. H. Homepage">
-          <span class="brand-symbol" aria-hidden="true">✦</span>
-
-          <span class="brand-copy">
-            <span class="brand-name">K. S. H.</span>
-            <span class="brand-title">Creative Portfolio Archive</span>
-          </span>
-        </a>
-
+        <a href="index.html" class="brand" aria-label="Kay homepage">KAY</a>
         <nav class="site-nav" aria-label="Main navigation">
           <ul>
             <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="projects.html">Work</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-
-        <a href="projects.html" class="nav-cta">View Work</a>
+        <a href="projects.html" class="nav-cta">View work</a>
       </div>
     </header>
 
     <main id="main-content">
       <section class="hero">
         <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Built with Curiosity &amp; Craft</p>
-
-            <h1>Design-minded work with atmosphere, structure, and edge.</h1>
-
-            <p class="hero-text">
-              I build polished web experiences that balance visual personality with clean structure, thoughtful spacing, and purposeful interaction.
+          <div>
+            <p class="hero-kicker">Front-End Developer + Creative Coder</p>
+            <h1 class="hero-name">KAY</h1>
+            <p class="hero-statement">
+              I build <span class="with-comma">thoughtful</span> playful things
+              for the <span class="with-period">web</span>
             </p>
-
-            <div class="hero-actions" aria-label="Primary actions">
-              <a href="projects.html" class="button button-primary">Explore Projects</a>
-              <a href="about.html" class="button button-secondary">About Me</a>
-            </div>
           </div>
-
-          <aside class="hero-panel" aria-label="Portfolio status card">
-            <div class="image-frame hero-image-frame">
-              <img
-                  src="images/hero-image.png"
-                  alt="KSH Logo Image"
-                  class="hero-initial-image">
-            </div>
-
-            <div class="status-card">
-              <p class="status-label">Current Focus</p>
-              <p class="status-title">JavaScript and interactive interfaces</p>
-            </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="snapshot-section">
-        <div class="container">
-          <div class="snapshot-grid" aria-label="Portfolio snapshot">
-            <article class="snapshot-item">
-              <span>01</span>
-              <p>HTML & CSS</p>
-            </article>
-
-            <article class="snapshot-item">
-              <span>02</span>
-              <p>JavaScript in Progress</p>
-            </article>
-
-            <article class="snapshot-item">
-              <span>03</span>
-              <p>React: Upcoming</p>
-            </article>
-
-            <article class="snapshot-item">
-              <span>04</span>
-              <p>Python: Upcoming</p>
-            </article>
+          <div class="hero-note">
+            <p>
+              I’m a design-minded developer creating expressive, accessible
+              interfaces with strong structure, careful details, and a little
+              edge.
+            </p>
+            <a href="projects.html" class="button button-primary"
+              >View selected work →</a
+            >
           </div>
         </div>
       </section>
 
-      <section class="featured-section">
+      <section class="intro-strip" aria-label="Portfolio focus">
+        <div class="container strip-grid">
+          <div class="strip-item">
+            <strong>01</strong><span>Semantic HTML</span>
+          </div>
+          <div class="strip-item">
+            <strong>02</strong><span>Responsive CSS</span>
+          </div>
+          <div class="strip-item">
+            <strong>03</strong><span>JavaScript</span>
+          </div>
+          <div class="strip-item">
+            <strong>04</strong><span>Creative Direction</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="paper-section" id="work">
         <div class="container">
-          <div class="section-heading split-heading">
-            <div>
-              <a href="projects.html" class="text-link">View full archive</a>
-            </div>
+          <div class="section-heading">
+            <p class="eyebrow">A few projects I’m proud of</p>
+            <h2>Selected Work</h2>
+            <span class="section-number">01 / 03</span>
           </div>
 
-          <div class="featured-grid">
-            <article class="project-card large-project-card">
+          <div class="project-list">
+            <article class="project-row">
+              <span class="project-count">01</span>
+              <div>
+                <p class="project-meta">
+                  Client Website / Full-Stack Operations
+                </p>
+                <h3>Golden Years Tech Help</h3>
+                <p>
+                  A production website and staff CRM for a senior-focused
+                  technology support business, including booking, payments,
+                  customer records, and operational tools.
+                </p>
+                <div class="project-links">
+                  <a href="projects.html#golden-years">Case study</a>
+                  <a
+                    href="https://www.goldenyearsth.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live site ↗</a
+                  >
+                </div>
+              </div>
+              <div class="project-preview">
+                <img
+                  src="images/golden-years-preview-2x.png"
+                  alt="Golden Years Tech Help website homepage"
+                />
+              </div>
               <a
+                class="project-arrow"
+                href="projects.html#golden-years"
+                aria-label="Read the Golden Years Tech Help case study"
+                >→</a
+              >
+            </article>
+
+            <article class="project-row">
+              <span class="project-count">02</span>
+              <div>
+                <p class="project-meta">Community Resource / Search</p>
+                <h3>Syntax Studio</h3>
+                <p>
+                  A beginner-friendly coding resource library that organizes
+                  tools, guides, and project ideas without overwhelming people
+                  who are learning.
+                </p>
+                <div class="project-links">
+                  <a href="projects.html#resource-library">Case study</a>
+                  <a
+                    href="https://kaymade.github.io/resource-library/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live site ↗</a
+                  >
+                </div>
+              </div>
+              <div class="project-preview">
+                <img
+                  src="images/syntax-studio-preview-2x.png"
+                  alt="Syntax Studio Resource Library homepage"
+                />
+              </div>
+              <a
+                class="project-arrow"
                 href="projects.html#resource-library"
-                class="project-image-link"
-                aria-label="Read Learning Dashboard case study"
+                aria-label="Read the Syntax Studio case study"
+                >→</a
               >
-                <div class="image-frame project-image-frame">
-                  <img src="images/resource-library-screenshot.png"
-                      alt="Screenshot of Resource Library">
-                </div>
-              </a>
-
-              <div class="project-card-content">
-                <div class="tag-row">
-                  <span>Semantic HTML</span>
-                  <span>Resource/Card Organization</span>
-                  <span>Responsive UI</span>
-                  <span>Community-focused Content Design</span>
-                </div>
-
-                <h3>Syntax Studio Resource Library</h3>
-
-                <p>
-                  Syntax Studio Resource Library is a beginner-friendly coding resource website for self-taught developers and people learning to build projects.
-                </p>
-
-                <div class="project-actions">
-                  <a href="projects.html#resource-library">Read Case Study</a>
-                  <a href="https://kaymade.github.io/resource-library/" target="_blank" rel="noopener noreferrer">Live Site</a>
-                </div>
-              </div>
             </article>
 
-            <article class="project-card large-project-card">
+            <article class="project-row">
+              <span class="project-count">03</span>
+              <div>
+                <p class="project-meta">Obsidian Theme / Design System</p>
+                <h3>Alice Velvet</h3>
+                <p>
+                  A custom Obsidian theme with a distinct visual identity,
+                  carefully tuned typography, readable editor surfaces, and
+                  cohesive interface states.
+                </p>
+                <div class="project-links">
+                  <a href="projects.html#alice-velvet">Case study</a>
+                  <a
+                    href="https://community.obsidian.md/themes/alice-velvet"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Theme page ↗</a
+                  >
+                </div>
+              </div>
+              <div class="project-preview">
+                <img
+                  src="images/alice-velvet-dark-2x.png"
+                  alt="Alice Velvet dark theme interface preview"
+                />
+              </div>
               <a
-                href="projects.html#myth-and-mana"
-                class="project-image-link"
-                aria-label="Read Myth & Mana case study"
+                class="project-arrow"
+                href="projects.html#alice-velvet"
+                aria-label="Read the Alice Velvet case study"
+                >→</a
               >
-                <div class="image-frame project-image-frame">
-                  <img src="images/myth-and-mana-screenshot.png"
-                      alt="Screenshot of Myth and Mana">
-
-                  <div class="image-placeholder">
-                    <span>Myth &amp; Mana Screenshot</span>
-                  </div>
-                </div>
-              </a>
-
-              <div class="project-card-content">
-                <div class="tag-row">
-                  <span>CSS Grid Layout</span>
-                  <span>Editorial-style Visual Hierarchy</span>
-                  <span>Visual Storytelling</span>
-                  <span>Responsive Feature/Card Sections</span>
-                </div>
-
-                <h3>Myth &amp; Mana</h3>
-
-                <p>
-                  A fantasy-inspired editorial concept using mood, layout, and decorative hierarchy to create a stronger visual experience.
-                </p>
-
-                <div class="project-actions">
-                  <a href="projects.html#myth-and-mana">Read Case Study</a>
-                  <a href="https://kaymade.github.io/myth-and-mana" target="_blank" rel="noopener noreferrer">Live Site</a>
-                </div>
-              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="about-teaser-section">
-        <div class="container about-teaser-grid">
-          <div class="section-heading">
+      <section class="dark-section">
+        <div class="container about-grid">
+          <div>
             <p class="eyebrow">About</p>
-            <h2>A creative builder with a strong eye for atmosphere and detail.</h2>
+            <h2>
+              <span class="with-comma">Code</span>
+              <span class="with-comma">color</span> and
+              <span class="with-period">curiosity</span>
+            </h2>
           </div>
-
-          <div class="text-panel">
+          <div class="about-copy">
             <p>
-              My work is shaped by a love for expressive visuals, careful structure, and interfaces that feel intentional from the first glance.
+              My work is shaped by expressive visuals, careful structure, and
+              interfaces that feel intentional from the first glance. I care
+              about the full feeling of a page: the hierarchy, spacing,
+              responsiveness, and the small details that guide someone through
+              it.
             </p>
-
-            <p>
-              I'm building a foundation in front-end development through hands-on projects, strong visual direction, and consistent practice.
-            </p>
-
-            <a href="about.html" class="button button-secondary">More About Me</a>
+            <a href="about.html" class="button button-secondary"
+              >More about me →</a
+            >
           </div>
+          <div>
+            <p class="eyebrow">Tools + Focus</p>
+          </div>
+          <ul class="tool-list" aria-label="Tools and skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Accessibility</li>
+            <li>Git + GitHub</li>
+            <li>Supabase</li>
+            <li>Creative Direction</li>
+          </ul>
         </div>
       </section>
 
-      <section class="toolkit-section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Toolkit</p>
-            <h2>Skills, tools, and current areas of focus.</h2>
-          </div>
-
-          <div class="toolkit-grid">
-            <article class="toolkit-card">
-              <h3>Front-End</h3>
-
-              <ul class="meter-list">
-                <li>
-                  <div>
-                    <span>HTML5</span>
-                    <strong>Structure</strong>
-                  </div>
-
-                  <meter min="0" max="100" value="90">90%</meter>
-                </li>
-
-                <li>
-                  <div>
-                    <span>CSS3</span>
-                    <strong>Layout & Styling</strong>
-                  </div>
-
-                  <meter min="0" max="100" value="86">86%</meter>
-                </li>
-
-                <li>
-                  <div>
-                    <span>JavaScript</span>
-                    <strong>In Progress</strong>
-                  </div>
-
-                  <meter min="0" max="100" value="45">50%</meter>
-                </li>
-
-                <li>
-                  <div>
-                    <span>React</span>
-                    <strong>Pending</strong>
-                  </div>
-
-                  <meter min="0" max="100" value="0">0%</meter>
-                </li>
-
-                <li>
-                  <div>
-                    <span>Python</span>
-                    <strong>Pending</strong>
-                  </div>
-
-                  <meter min="0" max="100" value="0">0%</meter>
-                </li>
-              </ul>
-            </article>
-
-            <article class="toolkit-card">
-              <h3>Creative Tools</h3>
-
-              <ul class="pill-list">
-                <li>GIMP</li>
-                <li>Adobe Fresco</li>
-                <li>Photoshop</li>
-                <li>Procreate</li>
-                <li>Figma</li>
-                <li>CapCut</li>
-                <li>GitHub</li>
-                <li>GitHub Pages</li>
-                <li>Canva</li>
-                <li>Illustrator</li>
-                <li>InDesign</li>
-                <li>Obsidian</li>
-                <li>CodePen</li>
-                <li>Google Fonts</li>
-                <li>Coolors</li>
-              </ul>
-            </article>
-
-            <article class="toolkit-card">
-              <h3>Currently Studying</h3>
-
-              <ul class="star-list">
-                <li>Higher Order Functions and Callbacks</li>
-                <li>DOM Manipulation and Events</li>
-                <li>JavaScript and Accessibility</li>
-                <li>Basic Regex</li>
-                <li>Form Validation</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta-section">
-        <div class="container">
-          <div class="cta-card">
-            <p class="eyebrow">Enter the Archive</p>
-
-            <h2>Explore the projects behind the portfolio.</h2>
-
+      <section class="dark-section">
+        <div class="container contact-banner">
+          <h2>Let’s make something <span class="with-period">good</span></h2>
+          <div>
             <p>
-              Each case study breaks down the purpose, tools, process, lessons learned, and next improvements behind the work.
+              Have a project in mind, feedback to share, or just want to say hi?
             </p>
-
-            <a href="projects.html" class="button button-primary">View Case Studies</a>
+            <a href="contact.html" class="button button-primary"
+              >Get in touch →</a
+            >
           </div>
         </div>
       </section>
@@ -330,12 +246,25 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>Designed and built by K.S.H.</p>
-
+        <p>Designed and built by Kay.</p>
         <ul>
           <li><a href="mailto:kaymhelto@gmail.com">Email</a></li>
-          <li><a href="https://www.linkedin.com/in/kirsten-helton-4459b427b/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="https://github.com/kaymade" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kirsten-helton-4459b427b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/kaymade"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
         </ul>
       </div>
     </footer>
