@@ -1,0 +1,26 @@
+{
+  "name": "kaymade.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio showcasing production web applications, collaborative engineering, open-source projects, and selected creative work.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaymade/kaymade.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kaymade/kaymade.github.io/issues"
+  },
+  "homepage": "https://github.com/kaymade/kaymade.github.io#readme",
+  "devDependencies": {
+    "prettier": "^3.9.9"
+  }
+}
