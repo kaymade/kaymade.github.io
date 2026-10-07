@@ -158,19 +158,19 @@ h3 {
   color: var(--pink-bright);
 }
 .hero {
-  padding: clamp(4rem, 9vw, 8rem) 0 clamp(4rem, 8vw, 7rem);
+  padding: clamp(3.5rem, 7vw, 6rem) 0 clamp(3.75rem, 6vw, 5.5rem);
 }
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(260px, 0.75fr);
-  gap: clamp(3rem, 8vw, 7rem);
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: clamp(3rem, 6vw, 5.5rem);
   align-items: end;
 }
 .hero-name {
   margin-bottom: 1.5rem;
   color: var(--paper);
   font-family: var(--display);
-  font-size: clamp(6rem, 18vw, 14rem);
+  font-size: clamp(6rem, 14vw, 11rem);
   letter-spacing: -0.04em;
   line-height: 0.72;
 }
@@ -199,14 +199,14 @@ h3 {
   color: var(--pink-bright);
 }
 .hero-statement {
-  max-width: 15ch;
+  max-width: 19ch;
   margin-bottom: 0;
   font-family: var(--display);
-  font-size: clamp(2rem, 4.6vw, 4.6rem);
+  font-size: clamp(1.9rem, 3.2vw, 3.1rem);
   font-kerning: normal;
   font-feature-settings: "kern" 1;
   letter-spacing: var(--display-tracking);
-  line-height: 1.02;
+  line-height: 1.06;
   text-wrap: balance;
 }
 .hero-note {
@@ -487,18 +487,18 @@ h3 {
 }
 .page-hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
-  gap: clamp(3rem, 9vw, 9rem);
-  align-items: end;
+  grid-template-columns: minmax(0, 1.5fr) minmax(260px, 0.5fr);
+  gap: clamp(2.5rem, 6vw, 5rem);
+  align-items: center;
 }
 .page-hero-grid > * {
   min-width: 0;
 }
 .page-hero h1 {
-  max-width: 11ch;
+  max-width: 12ch;
   margin-bottom: 0;
   font-family: var(--display);
-  font-size: clamp(3.8rem, 8vw, 7.5rem);
+  font-size: clamp(3.8rem, 6.6vw, 6.75rem);
   font-kerning: normal;
   font-feature-settings: "kern" 1;
   letter-spacing: var(--display-tracking);
@@ -508,6 +508,9 @@ h3 {
   text-wrap: balance;
 }
 .page-hero-card {
+  justify-self: end;
+  width: 100%;
+  max-width: 36ch;
   padding-top: 1.5rem;
   border-top: 1px solid var(--line-light);
 }
@@ -516,16 +519,24 @@ h3 {
 }
 .project-index {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   border: 1px solid var(--line-dark);
 }
 .project-index a {
-  min-height: 135px;
-  padding: 1rem;
+  display: flex;
+  min-width: 0;
+  min-height: 155px;
+  padding: 1.25rem;
   border-right: 1px solid var(--line-dark);
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
   font-family: var(--mono);
   font-size: 0.78rem;
   text-decoration: none;
+  transition:
+    color 180ms ease,
+    background-color 180ms ease;
 }
 .project-index a:last-child {
   border-right: 0;
@@ -535,9 +546,12 @@ h3 {
   display: block;
 }
 .project-index strong {
-  margin-bottom: 2.5rem;
   color: #a86676;
   font-size: 0.68rem;
+}
+.project-index span {
+  line-height: 1.45;
+  text-wrap: balance;
 }
 .project-index a:hover,
 .project-index a:focus-visible {
@@ -774,6 +788,23 @@ h3 {
   padding-top: 1rem;
 }
 
+@media (min-width: 901px) {
+  body:has(.site-nav a[href="projects.html"][aria-current="page"])
+    .page-hero
+    h1 {
+    font-size: clamp(3.5rem, 6vw, 5.5rem);
+  }
+}
+
+@media (max-width: 900px) {
+  .page-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-hero-card {
+    justify-self: start;
+  }
+}
+
 @media (max-width: 850px) {
   .header-inner {
     grid-template-columns: 1fr auto;
@@ -797,8 +828,8 @@ h3 {
   .collab-feature {
     grid-template-columns: 1fr;
   }
-  .hero-name {
-    font-size: clamp(6rem, 30vw, 11rem);
+  .page-hero-card {
+    justify-self: start;
   }
   .project-row {
     grid-template-columns: 42px 1fr 30px;
@@ -808,19 +839,20 @@ h3 {
     grid-row: 2;
   }
   .project-index {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
-  .project-index a,
-  .project-index a:last-child {
-    min-height: auto;
-    border-right: 0;
+  .project-index a {
+    grid-column: span 2;
+    min-height: 130px;
     border-bottom: 1px solid var(--line-dark);
   }
-  .project-index a:last-child {
-    border-bottom: 0;
+  .project-index a:nth-child(3) {
+    border-right: 0;
   }
-  .project-index strong {
-    margin-bottom: 0.5rem;
+  .project-index a:nth-child(4),
+  .project-index a:last-child {
+    grid-column: span 3;
+    border-bottom: 0;
   }
   .collab-grid {
     grid-template-columns: 1fr;
@@ -874,19 +906,38 @@ h3 {
     font-size: clamp(2.8rem, 14vw, 4.5rem);
   }
   .collaborative-section .section-heading h2 {
-    font-size: clamp(2.25rem, 9.5vw, 3rem);
+    font-size: clamp(1.9rem, 9vw, 3rem);
   }
   .collaborative-section .section-heading .eyebrow {
     overflow-wrap: anywhere;
   }
   .page-hero h1 {
     max-width: 100%;
-    font-size: clamp(3rem, 13vw, 4rem);
+    font-size: clamp(1.8rem, 9vw, 3.7rem);
+  }
+  .page-hero-card {
+    justify-self: start;
+    max-width: none;
+  }
+  .project-index {
+    grid-template-columns: 1fr;
+  }
+  .project-index a,
+  .project-index a:nth-child(3),
+  .project-index a:nth-child(4),
+  .project-index a:last-child {
+    grid-column: auto;
+    min-height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--line-dark);
+  }
+  .project-index a:last-child {
+    border-bottom: 0;
   }
   .about-grid h2,
   .contact-grid h2,
   .contact-banner h2 {
-    font-size: clamp(2.5rem, 12vw, 3.6rem);
+    font-size: clamp(2.25rem, 11vw, 3.6rem);
   }
   .project-row {
     grid-template-columns: 34px minmax(0, 1fr);
