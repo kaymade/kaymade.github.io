@@ -324,7 +324,7 @@ h3 {
 .section-heading .eyebrow {
   grid-column: 1 / -1;
   margin-bottom: -0.75rem;
-  color: #a86676;
+  color: #955565;
 }
 .section-heading .section-number {
   align-self: center;
@@ -356,7 +356,7 @@ h3 {
   color: var(--muted);
 }
 .project-meta {
-  color: #a86676;
+  color: #955565;
 }
 .project-arrow {
   font-size: 2rem;
@@ -393,7 +393,7 @@ h3 {
 }
 .project-links a:hover,
 .project-links a:focus-visible {
-  color: #a86676;
+  color: #955565;
 }
 .about-grid,
 .contact-grid,
@@ -546,7 +546,7 @@ h3 {
   display: block;
 }
 .project-index strong {
-  color: #a86676;
+  color: #955565;
   font-size: 0.68rem;
 }
 .project-index span {
@@ -639,7 +639,7 @@ h3 {
 .case-grid h3,
 .info-block h3,
 .case-grid a {
-  color: #9d5d6c;
+  color: #955565;
 }
 .info-block {
   padding: 1.5rem 0;
