@@ -456,7 +456,7 @@ h3 {
   grid-template-columns: minmax(0, 1.25fr) minmax(250px, 0.75fr);
   gap: clamp(3rem, 8vw, 7rem);
   align-items: end;
-  padding: clamp(4rem, 7vw, 6rem) 0;
+  padding: clamp(2rem, 4vw, 3rem) 0;
   border-block: 1px solid var(--line-light);
 }
 .contact-banner h2 {
