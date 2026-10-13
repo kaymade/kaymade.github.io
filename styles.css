@@ -334,7 +334,7 @@ h3 {
 }
 .project-row {
   display: grid;
-  grid-template-columns: 60px minmax(0, 1.3fr) minmax(240px, 0.7fr) 42px;
+  grid-template-columns: 60px minmax(0, 1.1fr) minmax(240px, 0.9fr) 42px;
   gap: clamp(1.25rem, 4vw, 3rem);
   align-items: center;
   padding: clamp(2rem, 5vw, 3.8rem) 0;
@@ -807,7 +807,7 @@ h3 {
 
 @media (max-width: 850px) {
   .header-inner {
-    grid-template-columns: 42px 1fr 30px;
+    grid-template-columns: 1fr auto;
   }
   .site-nav {
     grid-column: 1 / -1;
@@ -832,7 +832,7 @@ h3 {
     justify-self: start;
   }
   .project-row {
-    grid-template-columns: 60px minmax(0, 1.1fr) minmax(240px, 0.9fr) 42px;
+    grid-template-columns: 42px 1fr 30px;
   }
   .project-preview {
     grid-column: 2 / -1;
@@ -940,7 +940,7 @@ h3 {
     font-size: clamp(2.25rem, 11vw, 3.6rem);
   }
   .project-row {
-    grid-template-columns: 60px minmax(0, 1.1fr) minmax(240px, 0.9fr) 42px;
+    grid-template-columns: 34px minmax(0, 1fr);
   }
   .project-arrow {
     display: none;
