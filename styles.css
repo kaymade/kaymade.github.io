@@ -807,7 +807,7 @@ h3 {
 
 @media (max-width: 850px) {
   .header-inner {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 42px 1fr 30px;
   }
   .site-nav {
     grid-column: 1 / -1;
@@ -940,7 +940,7 @@ h3 {
     font-size: clamp(2.25rem, 11vw, 3.6rem);
   }
   .project-row {
-    grid-template-columns: 34px minmax(0, 1fr);
+    grid-template-columns: 60px minmax(0, 1.1fr) minmax(240px, 0.9fr) 42px;
   }
   .project-arrow {
     display: none;
