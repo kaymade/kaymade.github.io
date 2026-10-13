@@ -832,7 +832,7 @@ h3 {
     justify-self: start;
   }
   .project-row {
-    grid-template-columns: 42px 1fr 30px;
+    grid-template-columns: 60px minmax(0, 1.1fr) minmax(240px, 0.9fr) 42px;
   }
   .project-preview {
     grid-column: 2 / -1;
